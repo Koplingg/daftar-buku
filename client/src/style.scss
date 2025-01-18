@@ -1,0 +1,132 @@
+.app {
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to right, #e0f7fa, #80deea);
+  font-family: 'Arial', sans-serif;
+
+  .addHome {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+      background-color: #00796b;
+      transform: scale(1.05);
+    }
+  }
+
+  h1 {
+    margin-bottom: 1px;
+    font-size: 2.5rem;
+    color: #004d40;
+  }
+
+  .books {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
+
+    .book {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #b2dfdb;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 3px 6px;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+
+      .delete {
+        border: 1px solid rgb(245, 191, 191);
+        color: rgb(242, 100, 100);
+      }
+
+      .update {
+        border: 1px solid rgb(204, 204, 243);
+        color: rgb(139, 139, 234);
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: teal;
+        outline: none;
+      }
+    }
+
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: teal;
+        outline: none;
+      }
+    }
+
+    button {
+      border: none;
+      padding: 10px;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: #00796b;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
